@@ -8,7 +8,7 @@ namespace TT.Services.Interfaces
         Task<Move> MakeMove(byte movement, int idGame);
         Task<IEnumerable<Statistics>?> EndGame();
         PagedList<Statistics> HistoricResults(GameParameters gameParameters);
-        Game? GetCurrentGame();
+        Task<Game?> GetCurrentGame(bool endDateNull);
     }
     
 }
