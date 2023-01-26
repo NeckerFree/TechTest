@@ -1,0 +1,17 @@
+C:\Elio\Development\Projects\TechTest\TT.Services\obj\Debug\net7.0\TT.Services.csproj.AssemblyReference.cache
+C:\Elio\Development\Projects\TechTest\TT.Services\obj\Debug\net7.0\TT.Services.GeneratedMSBuildEditorConfig.editorconfig
+C:\Elio\Development\Projects\TechTest\TT.Services\obj\Debug\net7.0\TT.Services.AssemblyInfoInputs.cache
+C:\Elio\Development\Projects\TechTest\TT.Services\obj\Debug\net7.0\TT.Services.AssemblyInfo.cs
+C:\Elio\Development\Projects\TechTest\TT.Services\obj\Debug\net7.0\TT.Services.csproj.CoreCompileInputs.cache
+C:\Elio\Development\Projects\TechTest\TT.Services\bin\Debug\net7.0\TT.Services.deps.json
+C:\Elio\Development\Projects\TechTest\TT.Services\bin\Debug\net7.0\TT.Services.dll
+C:\Elio\Development\Projects\TechTest\TT.Services\bin\Debug\net7.0\TT.Services.pdb
+C:\Elio\Development\Projects\TechTest\TT.Services\bin\Debug\net7.0\TT.Domain.dll
+C:\Elio\Development\Projects\TechTest\TT.Services\bin\Debug\net7.0\TT.Models.dll
+C:\Elio\Development\Projects\TechTest\TT.Services\bin\Debug\net7.0\TT.Domain.pdb
+C:\Elio\Development\Projects\TechTest\TT.Services\bin\Debug\net7.0\TT.Models.pdb
+C:\Elio\Development\Projects\TechTest\TT.Services\obj\Debug\net7.0\TT.Services.csproj.CopyComplete
+C:\Elio\Development\Projects\TechTest\TT.Services\obj\Debug\net7.0\TT.Services.dll
+C:\Elio\Development\Projects\TechTest\TT.Services\obj\Debug\net7.0\refint\TT.Services.dll
+C:\Elio\Development\Projects\TechTest\TT.Services\obj\Debug\net7.0\TT.Services.pdb
+C:\Elio\Development\Projects\TechTest\TT.Services\obj\Debug\net7.0\ref\TT.Services.dll
