@@ -38,7 +38,7 @@ app.MapPost("/Start", async (IGameService GameService, string gamerName) =>
 
 app.MapPost("/MakeMove", async (HttpContext http, IGameService GameService, [AsParameters] MoveParameters moveParameters) =>
 {
-    var currentGame = GameService.GetCurrentGame();
+    var currentGame =await GameService.GetCurrentGame(true);
     if (currentGame == null || currentGame.EndDate != null)
     {
         return Results.BadRequest("Current Game not found, please start a new game");
@@ -59,12 +59,12 @@ app.MapPost("/MakeMove", async (HttpContext http, IGameService GameService, [AsP
 });
 app.MapPost("/End", async (HttpContext http, IGameService GameService) =>
 {
-    var currentGame = GameService.GetCurrentGame();
-    if (currentGame!= null && currentGame.EndDate != null)
+    var gameResponse = await GameService.EndGame();
+    var currentGame =await GameService.GetCurrentGame(false);
+    if (currentGame == null)
     {
         return Results.BadRequest("Open Game not found, please start a new game");
-   }
-    var gameResponse = await GameService.EndGame();
+    }
     var result = "Tie";
     if (currentGame != null && currentGame.HumanWins != null && currentGame.ComputerWins != null)
     {

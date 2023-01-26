@@ -81,3 +81,4 @@ C:\Elio\Development\Projects\TechTest\TT.MinApi\obj\Debug\net7.0\TT.MinApi.pdb
 C:\Elio\Development\Projects\TechTest\TT.MinApi\obj\Debug\net7.0\TT.MinApi.genruntimeconfig.cache
 C:\Elio\Development\Projects\TechTest\TT.MinApi\obj\Debug\net7.0\ref\TT.MinApi.dll
 C:\Elio\Development\Projects\TechTest\TT.MinApi\bin\Debug\net7.0\NSwag.Annotations.dll
+C:\Elio\Development\Projects\TechTest\TT.MinApi\obj\Debug\net7.0\TT.MinApi.MvcApplicationPartsAssemblyInfo.cs

@@ -47,15 +47,20 @@ namespace TT.Services
 
         public Task<IEnumerable<Statistics>?> EndGame()
         {
-            IEnumerable<Statistics>? statisticsResult = new List<Statistics>();
-            Game? lastGame = GetCurrentGame();
+            IEnumerable<Statistics>? statisticsResult=new List<Statistics>();
+            
+            Game? lastGame = GetCurrentGame(true).Result;
+            var movements = _unitOfWork.Moves.GetAll();
             if (lastGame != null)
             {
+                var gameMoves = (from mv in movements.Result
+                                 where mv.GameId == lastGame.Id
+                                 select mv);
                 lastGame.EndDate = DateTime.Now;
-                lastGame.ComputerWins = (from mv in lastGame.Moves
+                lastGame.ComputerWins = (from mv in gameMoves
                                          where mv.Winner == true
                                          select mv).Count();
-                lastGame.HumanWins = (from mv in lastGame.Moves
+                lastGame.HumanWins = (from mv in gameMoves
                                       where mv.Winner == false
                                       select mv).Count();
                 _unitOfWork.Games.Update(lastGame);
@@ -65,10 +70,23 @@ namespace TT.Services
             return Task.FromResult(statisticsResult);
         }
 
-        public Game? GetCurrentGame()
+        public async Task<Game?> GetCurrentGame(bool endDateNull)
         {
-            var games = _unitOfWork.Games.GetAll();
-            Game? lastGame = games.Result.LastOrDefault();
+            Game? lastGame = null;
+            var games =await _unitOfWork.Games.GetAll();
+            //games = (from g in games select g);
+            if (endDateNull==true)
+            {
+                lastGame = (from g in games
+                            where g.EndDate.HasValue == false
+                            select g).LastOrDefault();
+            }
+            else
+            {
+                lastGame = (from g in games
+                            select g).LastOrDefault();
+            }
+           
             return lastGame;
         }
 
@@ -80,21 +98,7 @@ namespace TT.Services
             {
                 allStatistics = (from st in allStatistics where st.GameId == gameParameters.GameId select st);
             }
-            //GameInfo? gameInfo = (from g in games
-            //                where g.GamerName == gameParameters.GamerName
-            //                select
-            //                new GameInfo()
-            //                {
-            //                    Name = g.Name,
-            //                    GamerName = g.GamerName,
-            //                    StartDate = g.StartDate,
-            //                    EndDate = g.EndDate,
-            //                    HumanWins = g.HumanWins,
-            //                    ComputerWins = g.ComputerWins,
-            //                    GameWinner = (g.HumanWins > g.ComputerWins) ? g.GamerName : (g.ComputerWins > g.HumanWins) ? "DeepBlue" : "A tie"
-            //                }).FirstOrDefault();
-
-            
+                       
             var pagedData= PagedList<Statistics>.ToPagedList(allStatistics, gameParameters.PageNumber, gameParameters.PageSize);
             
             return pagedData;
@@ -108,14 +112,14 @@ namespace TT.Services
 
             var statistics = (from g in games
                           join m in movements on g.Id equals m.GameId
-                          where g.GamerName == gamerName
+                          where g.GamerName == gamerName 
                           select new Statistics
                           {
                             GameId= m.GameId,
                             ExecutionDate = m.ExecutionDate, 
                             ComputerMove = Enum.GetName(typeof(Enumerations.EnumPlays), m.ComputerMove),
                             HumanMove= Enum.GetName(typeof(Enumerations.EnumPlays), m.HumanMove),
-                            Winner = (m.Winner==true) ? "DeepBlue": g.GamerName 
+                            Winner =(m.Winner==null)?"Tie":(m.Winner==true) ? "DeepBlue": g.GamerName 
                           }).AsQueryable<Statistics>();
             
             return statistics;
