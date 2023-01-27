@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v7.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v7.0": {
+      "TT.Domain/1.0.0": {
+        "dependencies": {
+          "TT.Models": "1.0.0"
+        },
+        "runtime": {
+          "TT.Domain.dll": {}
+        }
+      },
+      "TT.Models/1.0.0": {
+        "runtime": {
+          "TT.Models.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "TT.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "TT.Models/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

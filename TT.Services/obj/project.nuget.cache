@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "0HXjWv/YkgAIDcfZ/cVkfAF9BIadRFLYyJ/O/WDSAcePhaiPgyFCtMUughGu8YqW3Ku+sOsd75zDx4JnvS3tRg==",
+  "success": true,
+  "projectFilePath": "C:\\Elio\\Development\\Projects\\TechTest\\TT.Services\\TT.Services.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\elio_\\.nuget\\packages\\system.linq.dynamic.core\\1.2.24\\system.linq.dynamic.core.1.2.24.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,15 @@
+C:\Elio\Development\Projects\TechTest\TT.Domain\bin\Debug\net7.0\TT.Domain.deps.json
+C:\Elio\Development\Projects\TechTest\TT.Domain\bin\Debug\net7.0\TT.Domain.dll
+C:\Elio\Development\Projects\TechTest\TT.Domain\bin\Debug\net7.0\TT.Domain.pdb
+C:\Elio\Development\Projects\TechTest\TT.Domain\bin\Debug\net7.0\TT.Models.dll
+C:\Elio\Development\Projects\TechTest\TT.Domain\bin\Debug\net7.0\TT.Models.pdb
+C:\Elio\Development\Projects\TechTest\TT.Domain\obj\Debug\net7.0\TT.Domain.csproj.AssemblyReference.cache
+C:\Elio\Development\Projects\TechTest\TT.Domain\obj\Debug\net7.0\TT.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Elio\Development\Projects\TechTest\TT.Domain\obj\Debug\net7.0\TT.Domain.AssemblyInfoInputs.cache
+C:\Elio\Development\Projects\TechTest\TT.Domain\obj\Debug\net7.0\TT.Domain.AssemblyInfo.cs
+C:\Elio\Development\Projects\TechTest\TT.Domain\obj\Debug\net7.0\TT.Domain.csproj.CoreCompileInputs.cache
+C:\Elio\Development\Projects\TechTest\TT.Domain\obj\Debug\net7.0\TT.Domain.csproj.CopyComplete
+C:\Elio\Development\Projects\TechTest\TT.Domain\obj\Debug\net7.0\TT.Domain.dll
+C:\Elio\Development\Projects\TechTest\TT.Domain\obj\Debug\net7.0\refint\TT.Domain.dll
+C:\Elio\Development\Projects\TechTest\TT.Domain\obj\Debug\net7.0\TT.Domain.pdb
+C:\Elio\Development\Projects\TechTest\TT.Domain\obj\Debug\net7.0\ref\TT.Domain.dll
