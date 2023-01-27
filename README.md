@@ -23,12 +23,36 @@ Web API for the program that plays Rock, Paper, Scissors against a human.
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 AdvancedWebAPI <a name="about-project"></a>
+# 📖 TechTest <a name="about-project"></a>
 
 **TechTest** is a .NET Solution that uses a layer architecture to expose a minimal Web API 
 for the program that plays Rock, Paper, Scissors against a human..
 
-# Web API Service Images:
+## Web API Service Images:
+***Swagger Index:***
+
+![Swagger](https://user-images.githubusercontent.com/8497300/214976709-abb1dc89-5a17-4c9c-9722-53d9f4b9e491.png)
+
+***Start Game Method:***
+
+![Start](https://user-images.githubusercontent.com/8497300/214976811-9c00ff7a-e9c4-4597-a6d7-ec9272909253.png)
+
+***Make Move Method:***
+
+![MakeMove](https://user-images.githubusercontent.com/8497300/214976869-cc25c801-6fc5-4c48-9487-e06ae500f10d.png)
+
+***End Game Method:***
+
+![End](https://user-images.githubusercontent.com/8497300/214976984-a6f71fc1-b0df-4c71-b5b3-21248277da28.png)
+
+***Historic Results Request:***
+
+![Historic Results Request](https://user-images.githubusercontent.com/8497300/214977101-7902a5d1-4b73-43e7-ab85-8db41f052fc5.png)
+
+***Historic Results Response:***
+
+![Historic Results Response](https://user-images.githubusercontent.com/8497300/214977172-e69c7693-1986-467d-8057-b132e3ab23bf.png)
+
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -62,6 +86,7 @@ for the program that plays Rock, Paper, Scissors against a human..
 - **Data Annotations**
 - **Extension Methods**
 - **Dependency Injection**
+- **Paging**
 - **GIT Flow**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
